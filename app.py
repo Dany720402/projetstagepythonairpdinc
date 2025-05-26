@@ -1208,7 +1208,7 @@ def overview1():
     # Exemple : Shopify (SHOP.TO) sur la Bourse de Toronto
     nosymbol = request.args.get("stock_symbol")
     ticker = yf.Ticker(nosymbol)
-    info = ticker.info
+    info = ticker.fast_info
 
     # Récupération des données
     nom = info.get("longName", "N/A")
