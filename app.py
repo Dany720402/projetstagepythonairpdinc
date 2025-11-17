@@ -947,8 +947,8 @@ def graphic2():
         error_message = "Erreur : Aucun symbole d'action fourni."
         return render_template('graphiquepredictionIA.html', stock_symbol=stock_symbol, error_message=error_message)
 
-    ALPHA_VANTAGE_API_KEY = 'NGX0L4KU016GOFDY'
-    FUNCTION = 'TIME_SERIES_DAILY'
+    ALPHA_VANTAGE_API_KEY = 'AQDTHEZQ6DY64JB3'
+    FUNCTION = 'TIME_SERIES_DAILY_ADJUSTED'
     url = f'https://www.alphavantage.co/query?function={FUNCTION}&symbol={stock_symbol}&apikey={ALPHA_VANTAGE_API_KEY}&datatype=csv'
 
     try:
